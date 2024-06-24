@@ -49,7 +49,7 @@ const WeatherComponent: React.FC = () => {
     if (latLong) {
       const fetchWeather = async () => {
         try {
-          const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latLong[0]}&lon=${latLong[1]}&appid=${apiKey}`);
+          const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latLong[0]}&lon=${latLong[1]}&appid=${apiKey}`);
           if (!response.ok) {
             throw new Error('Failed to fetch weather data');
           }

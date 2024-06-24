@@ -1,6 +1,6 @@
 "use client";
 import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation'; // Updated import
+import { useRouter } from 'next/navigation'; 
 import WeatherComponent from '../components/WeatherComponent';
 import { useEffect } from 'react';
 
