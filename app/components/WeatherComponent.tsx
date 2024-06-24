@@ -87,19 +87,21 @@ const WeatherComponent: React.FC = () => {
       </div>
       <div className="flex justify-between">
         <div className="text-gray-700">
-          <p>IP Address:</p>
-          <p>Latitude:</p>
-          <p>Longitude:</p>
-          <p>Temperature:</p>
-          <p>Humidity:</p>
-          <p>Wind Speed:</p>
-          <p>Description:</p>
+          <p>IP Address: </p>
+          <p>Latitude: </p>
+          <p>Longitude: </p>
+          <br />
+          <p>Temperature:  </p>
+          <p>Humidity: </p>
+          <p>Wind Speed: </p>
+          <p>Description: </p>
         </div>
         <div className="text-gray-900">
           <p>{clientIp}</p>
           <p>{latLong[0]}</p>
           <p>{latLong[1]}</p>
-          <p>{(temperature - 273.15).toFixed(2)} °C</p> {/* Convert from Kelvin to Celsius */}
+          <br />
+          <p>{(temperature - 273.15).toFixed(2)} °C</p>
           <p>{humidity} %</p>
           <p>{(windSpeed * 3.6).toFixed(0)} km/h</p>
           <p>{description}</p>

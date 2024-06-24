@@ -18,10 +18,8 @@ const Home = () => {
         </button>
       ) : (
         <>
-          <Link href="/weather">
-            <a className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700">
+          <Link href="/weather" className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700">
               Go to Weather Page
-            </a>
           </Link>
           <button
             onClick={() => signOut({ callbackUrl: '/' })}
